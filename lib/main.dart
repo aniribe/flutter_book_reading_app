@@ -1,5 +1,5 @@
 import 'package:book_reading/constants/app_colors.dart';
-import 'package:book_reading/views/welcome_screen.dart';
+import 'package:book_reading/views/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
