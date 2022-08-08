@@ -1,8 +1,13 @@
 import 'package:book_reading/constants/app_colors.dart';
 import 'package:book_reading/views/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:stacked_services/stacked_services.dart';
+
+import 'config/app.locator.dart';
+import 'config/app.router.dart';
 
 void main() {
+  setupLocator();
   runApp(const MyApp());
 }
 
@@ -20,7 +25,9 @@ class MyApp extends StatelessWidget {
         textTheme:
             Theme.of(context).textTheme.apply(displayColor: AppColors.black),
       ),
-      home: const WelcomeScreenView(),
+      navigatorKey: StackedService.navigatorKey,
+      onGenerateRoute: StackedRouter().onGenerateRoute,
+      home: const WelcomeView(),
     );
   }
 }

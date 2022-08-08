@@ -6,18 +6,20 @@ class RoundedButton extends StatelessWidget {
   final String text;
   final double fontSize;
   final double width;
+  final VoidCallback onPressed;
 
   const RoundedButton({
     Key? key,
     required this.text,
     required this.fontSize,
     required this.width,
+    required this.onPressed,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           elevation: 20,
           primary: AppColors.white,
