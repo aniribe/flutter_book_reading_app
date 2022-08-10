@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-
 import '../../constants/app_images.dart';
 
 class BookImage extends StatelessWidget {

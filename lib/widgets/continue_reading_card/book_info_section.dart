@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import '../../util/ui_helpers.dart';
 import '../best_of_the_day_card/author.dart';
-import '../best_of_the_day_card/book_image.dart';
 import '../best_of_the_day_card/book_name.dart';
+import 'book_image.dart';
 import 'chapter_section.dart';
 
 class BookInfoSection extends StatelessWidget {

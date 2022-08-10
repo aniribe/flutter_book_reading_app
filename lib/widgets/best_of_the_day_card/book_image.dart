@@ -9,9 +9,12 @@ class BookImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(
-      AppImages.book3,
-      width: screenWidth(context) * 0.37,
+    return Positioned(
+      right: 0,
+      child: Image.asset(
+        AppImages.book3,
+        width: screenWidth(context) * 0.37,
+      ),
     );
   }
 }
