@@ -27,7 +27,7 @@ class ReadingListCard extends StatelessWidget {
       height: 245,
       width: 202,
       margin: const EdgeInsets.only(
-        left: 24,
+        right: 24,
         bottom: 40,
       ),
       child: Stack(

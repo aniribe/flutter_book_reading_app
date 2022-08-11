@@ -17,4 +17,6 @@ class StringConstants {
   static const String howToWin = 'How To Win \nFriend & Influence';
   static const String whenTheEarth =
       'When the earth was flat and everyone wanted to win the game of the best and people….';
+  static const String continueReading = 'Continue ';
+  static const String reading = 'reading...';
 }

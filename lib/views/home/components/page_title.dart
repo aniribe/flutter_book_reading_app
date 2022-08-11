@@ -1,27 +1,27 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../constants/string_constants.dart';
 
 class PageTitle extends StatelessWidget {
+  final String mainText;
+  final String boldText;
+
   const PageTitle({
     Key? key,
+    required this.mainText,
+    required this.boldText,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: RichText(
-        text: TextSpan(
-          style: Theme.of(context).textTheme.headline4,
-          children: const [
-            TextSpan(text: StringConstants.whatReading),
-            TextSpan(
-                text: StringConstants.today,
-                style: TextStyle(fontWeight: FontWeight.bold)),
-          ],
-        ),
+    return RichText(
+      text: TextSpan(
+        style: Theme.of(context).textTheme.headline4,
+        children: [
+          TextSpan(text: mainText),
+          TextSpan(
+              text: boldText,
+              style: const TextStyle(fontWeight: FontWeight.bold)),
+        ],
       ),
     );
   }
