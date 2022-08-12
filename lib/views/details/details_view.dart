@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'components/book_info_section.dart';
 import 'components/chapter_list_section.dart';
+import 'components/you_like_section.dart';
 import 'details_viewmodel.dart';
 
 class DetailsView extends StatelessWidget {
@@ -20,12 +21,14 @@ class DetailsView extends StatelessWidget {
                 alignment: Alignment.topCenter,
                 children: [
                   Container(
-                    height: screenHeight(context),
+                    height: screenHeight(context) * 0.86,
                   ),
                   const BookInfoSection(),
                   const ChapterListSection(),
                 ],
               ),
+              const YouLikeSection(),
+              verticalSpace(40),
             ],
           ),
         ),

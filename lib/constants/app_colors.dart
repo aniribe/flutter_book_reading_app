@@ -7,4 +7,5 @@ class AppColors {
   static const Color progressIndicator = Color(0xFFBE7066);
   static const Color white = Color(0xFFFFFFFF);
   static const Color shadowColor = Color(0xFFD3D3D3);
+  static const Color lightBeigeColor = Color(0xFFFFF8F9);
 }

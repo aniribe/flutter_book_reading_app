@@ -12,19 +12,18 @@ class ChapterListSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       top: screenHeight(context) * 0.3,
-      height: screenHeight(context) * 0.6,
+      height: screenHeight(context) * 0.55,
       width: screenWidth(context),
-      child: Container(
-        child: ListView.builder(
-          itemCount: booksChapters.length,
-          itemBuilder: (context, index) => Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: ChapterCard(
-              name: booksChapters[index].chapterName,
-              chapterNumber: booksChapters[index].chapterNumber,
-              tag: booksChapters[index].tag,
-              press: () {},
-            ),
+      child: ListView.builder(
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: booksChapters.length,
+        itemBuilder: (context, index) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: ChapterCard(
+            name: booksChapters[index].chapterName,
+            chapterNumber: booksChapters[index].chapterNumber,
+            tag: booksChapters[index].tag,
+            press: () {},
           ),
         ),
       ),
